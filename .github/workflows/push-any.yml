@@ -21,5 +21,7 @@ jobs:
       run: dotnet restore ./Renee.PoopCheck/Renee.PoopCheck.csproj
     - name: Build
       run: dotnet build --no-restore ./Renee.PoopCheck/Renee.PoopCheck.csproj
-    #- name: Test
-    #  run: dotnet test --no-build --verbosity normal
+    - id: PoopCheck
+      uses: ./.github/actions/poopcheck
+      with:
+        copyright-format: 'Hello!'

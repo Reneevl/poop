@@ -1,0 +1,13 @@
+name: 'Poop Check'
+description: 'Check if the copyright line exists in files'
+inputs:
+  copyright-format:
+    description: 'Format for copyright line'
+    required: true
+    default: 'Copyright © <p0>[-<p1>] Heijmans Infra BV - All Rights Reserved'
+runs:
+  using: "composite"
+  steps:
+    - id: poop-check
+      run: poop-check.sh
+      shell: bash
