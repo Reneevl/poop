@@ -5,10 +5,6 @@ inputs:
     description: 'Format for copyright line'
     required: true
     default: 'Copyright © <p0>[-<p1>] Heijmans Infra BV - All Rights Reserved'
-outputs:
-  result:
-    description: 'Found poop'
-    value: ${{steps.poop-check.outputs.poop}}
 runs:
   using: "composite"
   steps:

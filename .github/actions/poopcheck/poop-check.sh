@@ -1,1 +1,2 @@
-echo "poop=$(echo false)" >> $GITHUB_OUTPUT
+#!/bin/bash
+echo "hey"
